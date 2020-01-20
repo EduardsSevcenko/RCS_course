@@ -1,0 +1,8 @@
+# Ignore all files with my personal notes
+**/notes.txt
+**/instrukcijas.txt
+
+# Ignore key files as an additional security measure
+**/*.pem
+**/*.pub
+
