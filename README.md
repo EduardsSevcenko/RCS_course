@@ -22,7 +22,7 @@ https://github.com/reversedego/RCS_course
 ## 4. SQL valoda, datubāzu pamati, Python un datubāzes
 7. Datubāzes kā risinājums. Tabulas, relācijas, datu modeļa izveide. SQL pamati un vingrinājumi (select, join).
 8. Turpinājums par SQL (group by, iekšējie selecti).
-9. Praktiskā darbība ar Python un MySQL
+9. Praktiskā darbība ar Python un MySQL  
 **10.** Praktiskā darbība ar Python un MySQL. Datu analīzes pieejas, reporting risinājumu arhitektūras, lambda arhitektūra.
 
 ## 5. Ievads lielajos datos
