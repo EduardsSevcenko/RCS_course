@@ -30,8 +30,13 @@ https://github.com/reversedego/RCS_course
 12. Ieskats un demonstrācija lielo datu tehnoloģijās prakse ar HDFS un Hive.
 
 ## 6. Apache Spark
-14. Spark kā nākamās paaudzes ETL rīks, priekšrocības. Vienkāršākās Spark datu struktūras. 
-15. Praktiska darbošanās ar Spark Python API. Datu transformācijas, paralelizācijas, implementēšana un monitorēšana. 
-**16.** Praktiska darbošanās ar Spark
+13. Spark kā nākamās paaudzes ETL rīks, priekšrocības. Vienkāršākās Spark datu struktūras. 
+14. Praktiska darbošanās ar Spark Python API. Datu transformācijas, paralelizācijas, implementēšana un monitorēšana. 
+**15.** Praktiska darbošanās ar Spark
 
 ## 7. Ievads datu zinātnē
+16. Datu zinātnieka loma. feature engineering, datu attēlošana ar Python. Vienkāršākie ML modeļi (PCA, KNN, DecisionTree, SVM,Linear(multivariate)Regression)
+17. Praktisks darbs ar sklearn un pyplot
+
+## 8. Datu apstrādes projekts
+Viss atlikušais laiks paredzēts praktiskam darbam ar kursa dalībniekam interesējošu projektu.
