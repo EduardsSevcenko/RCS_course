@@ -27,10 +27,6 @@ CREATE DATABASE /*!32312 IF NOT EXISTS*/`classicmodels` /*!40100 DEFAULT CHARACT
 
 USE `classicmodels`;
 
-/*Table structure for table `customers` */
-
-DROP TABLE IF EXISTS `customers`;
-
 CREATE TABLE `customers` (
   `customerNumber` int(11) NOT NULL,
   `customerName` varchar(50) NOT NULL,
@@ -49,8 +45,6 @@ CREATE TABLE `customers` (
   KEY `salesRepEmployeeNumber` (`salesRepEmployeeNumber`),
   CONSTRAINT `customers_ibfk_1` FOREIGN KEY (`salesRepEmployeeNumber`) REFERENCES `employees` (`employeeNumber`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
-/*Data for the table `customers` */
 
 insert  into `customers`(`customerNumber`,`customerName`,`contactLastName`,`contactFirstName`,`phone`,`addressLine1`,`addressLine2`,`city`,`state`,`postalCode`,`country`,`salesRepEmployeeNumber`,`creditLimit`) values 
 
@@ -100,7 +94,7 @@ insert  into `customers`(`customerNumber`,`customerName`,`contactLastName`,`cont
 
 (171,'Daedalus Designs Imports','Rancé','Martine ','20.16.1555','184, chaussée de Tournai',NULL,'Lille',NULL,'59000','France',1370,'82900.00'),
 
-(172,'La Corne D\'abondance, Co.','Bertrand','Marie','(1) 42.34.2555','265, boulevard Charonne',NULL,'Paris',NULL,'75012','France',1337,'84300.00'),
+(172,'La Corne Dabondance, Co.','Bertrand','Marie','(1) 42.34.2555','265, boulevard Charonne',NULL,'Paris',NULL,'75012','France',1337,'84300.00'),
 
 (173,'Cambridge Collectables Co.','Tseng','Jerry','6175555555','4658 Baden Av.',NULL,'Cambridge','MA','51247','USA',1188,'43400.00'),
 
@@ -156,7 +150,7 @@ insert  into `customers`(`customerNumber`,`customerName`,`contactLastName`,`cont
 
 (250,'Lyon Souveniers','Da Silva','Daniel','+33 1 46 62 7555','27 rue du Colonel Pierre Avia',NULL,'Paris',NULL,'75508','France',1337,'68100.00'),
 
-(256,'Auto Associés & Cie.','Tonini','Daniel ','30.59.8555','67, avenue de l\'Europe',NULL,'Versailles',NULL,'78000','France',1370,'77900.00'),
+(256,'Auto Associés & Cie.','Tonini','Daniel ','30.59.8555','67, avenue de lEurope',NULL,'Versailles',NULL,'78000','France',1370,'77900.00'),
 
 (259,'Toms Spezialitäten, Ltd','Pfalzheim','Henriette ','0221-5554327','Mehrheimerstr. 369',NULL,'Köln',NULL,'50739','Germany',1504,'120400.00'),
 
@@ -164,13 +158,13 @@ insert  into `customers`(`customerNumber`,`customerName`,`contactLastName`,`cont
 
 (273,'Franken Gifts, Co','Franken','Peter ','089-0877555','Berliner Platz 43',NULL,'München',NULL,'80805','Germany',NULL,'0.00'),
 
-(276,'Anna\'s Decorations, Ltd','O\'Hara','Anna','02 9936 8555','201 Miller Street','Level 15','North Sydney','NSW','2060','Australia',1611,'107800.00'),
+(276,'Annas Decorations, Ltd','OHara','Anna','02 9936 8555','201 Miller Street','Level 15','North Sydney','NSW','2060','Australia',1611,'107800.00'),
 
 (278,'Rovelli Gifts','Rovelli','Giovanni ','035-640555','Via Ludovico il Moro 22',NULL,'Bergamo',NULL,'24100','Italy',1401,'119600.00'),
 
 (282,'Souveniers And Things Co.','Huxley','Adrian','+61 2 9495 8555','Monitor Money Building','815 Pacific Hwy','Chatswood','NSW','2067','Australia',1611,'93300.00'),
 
-(286,'Marta\'s Replicas Co.','Hernandez','Marta','6175558555','39323 Spinnaker Dr.',NULL,'Cambridge','MA','51247','USA',1216,'123700.00'),
+(286,'Martas Replicas Co.','Hernandez','Marta','6175558555','39323 Spinnaker Dr.',NULL,'Cambridge','MA','51247','USA',1216,'123700.00'),
 
 (293,'BG&E Collectables','Harrison','Ed','+41 26 425 50 01','Rte des Arsenaux 41 ',NULL,'Fribourg',NULL,'1700','Switzerland',NULL,'0.00'),
 
@@ -206,15 +200,15 @@ insert  into `customers`(`customerNumber`,`customerName`,`contactLastName`,`cont
 
 (339,'Classic Gift Ideas, Inc','Cervantes','Francisca','2155554695','782 First Street',NULL,'Philadelphia','PA','71270','USA',1188,'81100.00'),
 
-(344,'CAF Imports','Fernandez','Jesus','+34 913 728 555','Merchants House','27-30 Merchant\'s Quay','Madrid',NULL,'28023','Spain',1702,'59600.00'),
+(344,'CAF Imports','Fernandez','Jesus','+34 913 728 555','Merchants House','27-30 Merchants Quay','Madrid',NULL,'28023','Spain',1702,'59600.00'),
 
-(347,'Men \'R\' US Retailers, Ltd.','Chandler','Brian','2155554369','6047 Douglas Av.',NULL,'Los Angeles','CA','91003','USA',1166,'57700.00'),
+(347,'Men R US Retailers, Ltd.','Chandler','Brian','2155554369','6047 Douglas Av.',NULL,'Los Angeles','CA','91003','USA',1166,'57700.00'),
 
 (348,'Asian Treasures, Inc.','McKenna','Patricia ','2967 555','8 Johnstown Road',NULL,'Cork','Co. Cork',NULL,'Ireland',NULL,'0.00'),
 
 (350,'Marseille Mini Autos','Lebihan','Laurence ','91.24.4555','12, rue des Bouchers',NULL,'Marseille',NULL,'13008','France',1337,'65000.00'),
 
-(353,'Reims Collectables','Henriot','Paul ','26.47.1555','59 rue de l\'Abbaye',NULL,'Reims',NULL,'51100','France',1337,'81100.00'),
+(353,'Reims Collectables','Henriot','Paul ','26.47.1555','59 rue de lAbbaye',NULL,'Reims',NULL,'51100','France',1337,'81100.00'),
 
 (356,'SAR Distributors, Co','Kuger','Armand','+27 21 550 3555','1250 Pretorius Street',NULL,'Hatfield','Pretoria','0028','South Africa',NULL,'0.00'),
 
@@ -238,7 +232,7 @@ insert  into `customers`(`customerNumber`,`customerName`,`contactLastName`,`cont
 
 (385,'Cruz & Sons Co.','Cruz','Arnold','+63 2 555 3587','15 McCallum Street','NatWest Center #13-03','Makati City',NULL,'1227 MM','Philippines',1621,'81500.00'),
 
-(386,'L\'ordine Souveniers','Moroni','Maurizio ','0522-556555','Strada Provinciale 124',NULL,'Reggio Emilia',NULL,'42100','Italy',1401,'121400.00'),
+(386,'Lordine Souveniers','Moroni','Maurizio ','0522-556555','Strada Provinciale 124',NULL,'Reggio Emilia',NULL,'42100','Italy',1401,'121400.00'),
 
 (398,'Tokyo Collectables, Ltd','Shimamura','Akiko','+81 3 3584 0555','2-2-8 Roppongi',NULL,'Minato-ku','Tokyo','106-0032','Japan',1621,'94400.00'),
 
@@ -296,11 +290,8 @@ insert  into `customers`(`customerNumber`,`customerName`,`contactLastName`,`cont
 
 (495,'Diecast Collectables','Franco','Valarie','6175552555','6251 Ingle Ln.',NULL,'Boston','MA','51003','USA',1188,'85100.00'),
 
-(496,'Kelly\'s Gift Shop','Snowden','Tony','+64 9 5555500','Arenales 1938 3\'A\'',NULL,'Auckland  ',NULL,NULL,'New Zealand',1612,'110000.00');
+(496,'Kellys Gift Shop','Snowden','Tony','+64 9 5555500','Arenales 1938 3A',NULL,'Auckland  ',NULL,NULL,'New Zealand',1612,'110000.00');
 
-/*Table structure for table `employees` */
-
-DROP TABLE IF EXISTS `employees`;
 
 CREATE TABLE `employees` (
   `employeeNumber` int(11) NOT NULL,
@@ -318,7 +309,6 @@ CREATE TABLE `employees` (
   CONSTRAINT `employees_ibfk_2` FOREIGN KEY (`officeCode`) REFERENCES `offices` (`officeCode`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
-/*Data for the table `employees` */
 
 insert  into `employees`(`employeeNumber`,`lastName`,`firstName`,`extension`,`email`,`officeCode`,`reportsTo`,`jobTitle`) values 
 
@@ -370,8 +360,6 @@ insert  into `employees`(`employeeNumber`,`lastName`,`firstName`,`extension`,`em
 
 /*Table structure for table `offices` */
 
-DROP TABLE IF EXISTS `offices`;
-
 CREATE TABLE `offices` (
   `officeCode` varchar(10) NOT NULL,
   `city` varchar(50) NOT NULL,
@@ -395,7 +383,7 @@ insert  into `offices`(`officeCode`,`city`,`phone`,`addressLine1`,`addressLine2`
 
 ('3','NYC','+1 212 555 3000','523 East 53rd Street','apt. 5A','NY','USA','10022','NA'),
 
-('4','Paris','+33 14 723 4404','43 Rue Jouffroy D\'abbans',NULL,NULL,'France','75017','EMEA'),
+('4','Paris','+33 14 723 4404','43 Rue Jouffroy Dabbans',NULL,NULL,'France','75017','EMEA'),
 
 ('5','Tokyo','+81 33 224 5000','4-1 Kioicho',NULL,'Chiyoda-Ku','Japan','102-8578','Japan'),
 
@@ -405,7 +393,6 @@ insert  into `offices`(`officeCode`,`city`,`phone`,`addressLine1`,`addressLine2`
 
 /*Table structure for table `orderdetails` */
 
-DROP TABLE IF EXISTS `orderdetails`;
 
 CREATE TABLE `orderdetails` (
   `orderNumber` int(11) NOT NULL,
@@ -6417,8 +6404,6 @@ insert  into `orderdetails`(`orderNumber`,`productCode`,`quantityOrdered`,`price
 
 /*Table structure for table `orders` */
 
-DROP TABLE IF EXISTS `orders`;
-
 CREATE TABLE `orders` (
   `orderNumber` int(11) NOT NULL,
   `orderDate` date NOT NULL,
@@ -6564,13 +6549,13 @@ insert  into `orders`(`orderNumber`,`orderDate`,`requiredDate`,`shippedDate`,`st
 
 (10163,'2003-10-20','2003-10-27','2003-10-24','Shipped',NULL,424),
 
-(10164,'2003-10-21','2003-10-30','2003-10-23','Resolved','This order was disputed, but resolved on 11/1/2003; Customer doesn\'t like the colors and precision of the models.',452),
+(10164,'2003-10-21','2003-10-30','2003-10-23','Resolved','This order was disputed, but resolved on 11/1/2003; Customer doesnt like the colors and precision of the models.',452),
 
-(10165,'2003-10-22','2003-10-31','2003-12-26','Shipped','This order was on hold because customers\'s credit limit had been exceeded. Order will ship when payment is received',148),
+(10165,'2003-10-22','2003-10-31','2003-12-26','Shipped','This order was on hold because customerss credit limit had been exceeded. Order will ship when payment is received',148),
 
 (10166,'2003-10-21','2003-10-30','2003-10-27','Shipped',NULL,462),
 
-(10167,'2003-10-23','2003-10-30',NULL,'Cancelled','Customer called to cancel. The warehouse was notified in time and the order didn\'t ship. They have a new VP of Sales and are shifting their sales model. Our VP of Sales should contact them.',448),
+(10167,'2003-10-23','2003-10-30',NULL,'Cancelled','Customer called to cancel. The warehouse was notified in time and the order didnt ship. They have a new VP of Sales and are shifting their sales model. Our VP of Sales should contact them.',448),
 
 (10168,'2003-10-28','2003-11-03','2003-11-01','Shipped',NULL,161),
 
@@ -6890,7 +6875,7 @@ insert  into `orders`(`orderNumber`,`orderDate`,`requiredDate`,`shippedDate`,`st
 
 (10326,'2004-11-09','2004-11-16','2004-11-10','Shipped',NULL,144),
 
-(10327,'2004-11-10','2004-11-19','2004-11-13','Resolved','Order was disputed and resolved on 12/1/04. The Sales Manager was involved. Customer claims the scales of the models don\'t match what was discussed.',145),
+(10327,'2004-11-10','2004-11-19','2004-11-13','Resolved','Order was disputed and resolved on 12/1/04. The Sales Manager was involved. Customer claims the scales of the models dont match what was discussed.',145),
 
 (10328,'2004-11-12','2004-11-21','2004-11-18','Shipped','Customer very concerned about the exact color of the models. There is high risk that he may dispute the order because there is a slight color mismatch',278),
 
@@ -6970,7 +6955,7 @@ insert  into `orders`(`orderNumber`,`orderDate`,`requiredDate`,`shippedDate`,`st
 
 (10366,'2005-01-10','2005-01-19','2005-01-12','Shipped',NULL,381),
 
-(10367,'2005-01-12','2005-01-21','2005-01-16','Resolved','This order was disputed and resolved on 2/1/2005. Customer claimed that container with shipment was damaged. FedEx\'s investigation proved this wrong.',205),
+(10367,'2005-01-12','2005-01-21','2005-01-16','Resolved','This order was disputed and resolved on 2/1/2005. Customer claimed that container with shipment was damaged. FedExs investigation proved this wrong.',205),
 
 (10368,'2005-01-19','2005-01-27','2005-01-24','Shipped','Can we renegotiate this one?',124),
 
@@ -7008,7 +6993,7 @@ insert  into `orders`(`orderNumber`,`orderDate`,`requiredDate`,`shippedDate`,`st
 
 (10385,'2005-02-28','2005-03-09','2005-03-01','Shipped',NULL,124),
 
-(10386,'2005-03-01','2005-03-09','2005-03-06','Resolved','Disputed then Resolved on 3/15/2005. Customer doesn\'t like the craftsmaship of the models.',141),
+(10386,'2005-03-01','2005-03-09','2005-03-06','Resolved','Disputed then Resolved on 3/15/2005. Customer doesnt like the craftsmaship of the models.',141),
 
 (10387,'2005-03-02','2005-03-09','2005-03-06','Shipped','We need to keep in close contact with their Marketing VP. He is the decision maker for all their purchases.',148),
 
@@ -7066,11 +7051,11 @@ insert  into `orders`(`orderNumber`,`orderDate`,`requiredDate`,`shippedDate`,`st
 
 (10414,'2005-05-06','2005-05-13',NULL,'On Hold','Customer credit limit exceeded. Will ship when a payment is received.',362),
 
-(10415,'2005-05-09','2005-05-20','2005-05-12','Disputed','Customer claims the scales of the models don\'t match what was discussed. I keep all the paperwork though to prove otherwise',471),
+(10415,'2005-05-09','2005-05-20','2005-05-12','Disputed','Customer claims the scales of the models dont match what was discussed. I keep all the paperwork though to prove otherwise',471),
 
 (10416,'2005-05-10','2005-05-16','2005-05-14','Shipped',NULL,386),
 
-(10417,'2005-05-13','2005-05-19','2005-05-19','Disputed','Customer doesn\'t like the colors and precision of the models.',141),
+(10417,'2005-05-13','2005-05-19','2005-05-19','Disputed','Customer doesnt like the colors and precision of the models.',141),
 
 (10418,'2005-05-16','2005-05-24','2005-05-20','Shipped',NULL,412),
 
@@ -7089,8 +7074,6 @@ insert  into `orders`(`orderNumber`,`orderDate`,`requiredDate`,`shippedDate`,`st
 (10425,'2005-05-31','2005-06-07',NULL,'In Process',NULL,119);
 
 /*Table structure for table `payments` */
-
-DROP TABLE IF EXISTS `payments`;
 
 CREATE TABLE `payments` (
   `customerNumber` int(11) NOT NULL,
@@ -7653,8 +7636,6 @@ insert  into `payments`(`customerNumber`,`checkNumber`,`paymentDate`,`amount`) v
 
 /*Table structure for table `productlines` */
 
-DROP TABLE IF EXISTS `productlines`;
-
 CREATE TABLE `productlines` (
   `productLine` varchar(50) NOT NULL,
   `textDescription` varchar(4000) DEFAULT NULL,
@@ -7675,15 +7656,13 @@ insert  into `productlines`(`productLine`,`textDescription`,`htmlDescription`,`i
 
 ('Ships','The perfect holiday or anniversary gift for executives, clients, friends, and family. These handcrafted model ships are unique, stunning works of art that will be treasured for generations! They come fully assembled and ready for display in the home or office. We guarantee the highest quality, and best value.',NULL,NULL),
 
-('Trains','Model trains are a rewarding hobby for enthusiasts of all ages. Whether you\'re looking for collectible wooden trains, electric streetcars or locomotives, you\'ll find a number of great choices for any budget within this category. The interactive aspect of trains makes toy trains perfect for young children. The wooden train sets are ideal for children under the age of 5.',NULL,NULL),
+('Trains','Model trains are a rewarding hobby for enthusiasts of all ages. Whether youre looking for collectible wooden trains, electric streetcars or locomotives, youll find a number of great choices for any budget within this category. The interactive aspect of trains makes toy trains perfect for young children. The wooden train sets are ideal for children under the age of 5.',NULL,NULL),
 
 ('Trucks and Buses','The Truck and Bus models are realistic replicas of buses and specialized trucks produced from the early 1920s to present. The models range in size from 1:12 to 1:50 scale and include numerous limited edition and several out-of-production vehicles. Materials used include tin, diecast and plastic. All models include a certificate of authenticity from their manufacturers and are a perfect ornament for the home and office.',NULL,NULL),
 
 ('Vintage Cars','Our Vintage Car models realistically portray automobiles produced from the early 1900s through the 1940s. Materials used include Bakelite, diecast, plastic and wood. Most of the replicas are in the 1:18 and 1:24 scale sizes, which provide the optimum in detail and accuracy. Prices range from $30.00 up to $180.00 for some special limited edition replicas. All models include a certificate of authenticity from their manufacturers and come fully assembled and ready for display in the home or office.',NULL,NULL);
 
 /*Table structure for table `products` */
-
-DROP TABLE IF EXISTS `products`;
 
 CREATE TABLE `products` (
   `productCode` varchar(15) NOT NULL,
@@ -7746,7 +7725,7 @@ insert  into `products`(`productCode`,`productName`,`productLine`,`productScale`
 
 ('S18_1589','1965 Aston Martin DB5','Classic Cars','1:18','Classic Metal Creations','Die-cast model of the silver 1965 Aston Martin DB5 in silver. This model includes full wire wheels and doors that open with fully detailed passenger compartment. In 1:18 scale, this model measures approximately 10 inches/20 cm long.',9042,'65.96','124.44'),
 
-('S18_1662','1980s Black Hawk Helicopter','Planes','1:18','Red Start Diecast','1:18 scale replica of actual Army\'s UH-60L BLACK HAWK Helicopter. 100% hand-assembled. Features rotating rotor blades, propeller blades and rubber wheels.',5330,'77.27','157.69'),
+('S18_1662','1980s Black Hawk Helicopter','Planes','1:18','Red Start Diecast','1:18 scale replica of actual Armys UH-60L BLACK HAWK Helicopter. 100% hand-assembled. Features rotating rotor blades, propeller blades and rubber wheels.',5330,'77.27','157.69'),
 
 ('S18_1749','1917 Grand Touring Sedan','Vintage Cars','1:18','Welly Diecast Productions','This 1:18 scale replica of the 1917 Grand Touring car has all the features you would expect from museum quality reproductions: all four doors and bi-fold hood opening, detailed engine and instrument panel, chrome-look trim, and tufted upholstery, all topped off with a factory baked-enamel finish.',2724,'86.70','170.00'),
 
@@ -7806,7 +7785,7 @@ insert  into `products`(`productCode`,`productName`,`productLine`,`productScale`
 
 ('S18_4522','1904 Buick Runabout','Vintage Cars','1:18','Exoto Designs','Features opening trunk,  working steering system',8290,'52.66','87.77'),
 
-('S18_4600','1940s Ford truck','Trucks and Buses','1:18','Motor City Art Classics','This 1940s Ford Pick-Up truck is re-created in 1:18 scale of original 1940s Ford truck. This antique style metal 1940s Ford Flatbed truck is all hand-assembled. This collectible 1940\'s Pick-Up truck is painted in classic dark green color, and features rotating wheels.',3128,'84.76','121.08'),
+('S18_4600','1940s Ford truck','Trucks and Buses','1:18','Motor City Art Classics','This 1940s Ford Pick-Up truck is re-created in 1:18 scale of original 1940s Ford truck. This antique style metal 1940s Ford Flatbed truck is all hand-assembled. This collectible 1940s Pick-Up truck is painted in classic dark green color, and features rotating wheels.',3128,'84.76','121.08'),
 
 ('S18_4668','1939 Cadillac Limousine','Vintage Cars','1:18','Studio M Art Models','Features completely detailed interior including Velvet flocked drapes,deluxe wood grain floor, and a wood grain casket with seperate chrome handles',6645,'23.14','50.31'),
 
@@ -7820,7 +7799,7 @@ insert  into `products`(`productCode`,`productName`,`productLine`,`productScale`
 
 ('S24_1578','1997 BMW R 1100 S','Motorcycles','1:24','Autoart Studio Design','Detailed scale replica with working suspension and constructed from over 70 parts',7003,'60.86','112.70'),
 
-('S24_1628','1966 Shelby Cobra 427 S/C','Classic Cars','1:24','Carousel DieCast Legends','This diecast model of the 1966 Shelby Cobra 427 S/C includes many authentic details and operating parts. The 1:24 scale model of this iconic lighweight sports car from the 1960s comes in silver and it\'s own display case.',8197,'29.18','50.31'),
+('S24_1628','1966 Shelby Cobra 427 S/C','Classic Cars','1:24','Carousel DieCast Legends','This diecast model of the 1966 Shelby Cobra 427 S/C includes many authentic details and operating parts. The 1:24 scale model of this iconic lighweight sports car from the 1960s comes in silver and its own display case.',8197,'29.18','50.31'),
 
 ('S24_1785','1928 British Royal Navy Airplane','Planes','1:24','Classic Metal Creations','Official logos and insignias',3627,'66.74','109.42'),
 
@@ -7872,7 +7851,7 @@ insert  into `products`(`productCode`,`productName`,`productLine`,`productScale`
 
 ('S24_4620','1961 Chevrolet Impala','Classic Cars','1:18','Classic Metal Creations','This 1:18 scale precision die-cast reproduction of the 1961 Chevrolet Impala has all the features-doors, hood and trunk that open; detailed 409 cubic-inch engine; chrome dashboard and stick shift, two-tone interior; working steering system; all topped of with a factory baked-enamel finish.',7869,'32.33','80.84'),
 
-('S32_1268','1980’s GM Manhattan Express','Trucks and Buses','1:32','Motor City Art Classics','This 1980’s era new look Manhattan express is still active, running from the Bronx to mid-town Manhattan. Has 35 opeining windows and working lights. Needs a battery.',5099,'53.93','96.31'),
+('S32_1268','1980s GM Manhattan Express','Trucks and Buses','1:32','Motor City Art Classics','This 1980s era new look Manhattan express is still active, running from the Bronx to mid-town Manhattan. Has 35 opeining windows and working lights. Needs a battery.',5099,'53.93','96.31'),
 
 ('S32_1374','1997 BMW F650 ST','Motorcycles','1:32','Exoto Designs','Features official die-struck logos and baked enamel finish. Comes with stand.',178,'66.92','99.89'),
 
@@ -7880,7 +7859,7 @@ insert  into `products`(`productCode`,`productName`,`productLine`,`productScale`
 
 ('S32_2509','1954 Greyhound Scenicruiser','Trucks and Buses','1:32','Classic Metal Creations','Model features bi-level seating, 50 windows, skylights & glare resistant glass, working steering system, original logos',2874,'25.98','54.11'),
 
-('S32_3207','1950\'s Chicago Surface Lines Streetcar','Trains','1:32','Gearbox Collectibles','This streetcar is a joy to see. It has 80 separate windows, electric wire guides, detailed interiors with seats, poles and drivers controls, rolling and turning wheel assemblies, plus authentic factory baked-enamel finishes (Green Hornet for Chicago and Cream and Crimson for Boston).',8601,'26.72','62.14'),
+('S32_3207','1950s Chicago Surface Lines Streetcar','Trains','1:32','Gearbox Collectibles','This streetcar is a joy to see. It has 80 separate windows, electric wire guides, detailed interiors with seats, poles and drivers controls, rolling and turning wheel assemblies, plus authentic factory baked-enamel finishes (Green Hornet for Chicago and Cream and Crimson for Boston).',8601,'26.72','62.14'),
 
 ('S32_3522','1996 Peterbilt 379 Stake Bed with Outrigger','Trucks and Buses','1:32','Red Start Diecast','This model features, opening doors, detailed engine, working steering, tinted windows, detailed interior, die-struck logos, removable stakes operating outriggers, detachable second trailer, functioning 360-degree self loader, precision molded resin trailer and trim, baked enamel finish on cab',814,'33.61','64.64'),
 
