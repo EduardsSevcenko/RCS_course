@@ -19,14 +19,14 @@ bash Anaconda3-2019.10-Linux-x86_64.sh
 # # Spark2.4 installations and linking with pyspark
 sudo apt install openjdk-8-jre
 curl -O https://downloads.apache.org/spark/spark-2.4.5/spark-2.4.5-bin-hadoop2.7.tgz
-tar -zxf spark-2.4.5-bin-hadoop2.7
+tar -zxf spark-2.4.5-bin-hadoop2.7.tgz
 cd spark-2.4.5-bin-hadoop2.7
 touch linking
 cat >> linking # The indented block is to be copy-pasted into the input
 function spark_notebook () 
 {
 #Spark path (based on your computer)
-SPARK_PATH=~/spark-2.4.4-bin-hadoop2.7
+SPARK_PATH=~/spark-2.4.5-bin-hadoop2.7
 
 export PYSPARK_DRIVER_PYTHON="jupyter"
 export PYSPARK_DRIVER_PYTHON_OPTS="notebook --port 9999"
