@@ -21,21 +21,20 @@ sudo apt install openjdk-8-jre
 curl -O https://downloads.apache.org/spark/spark-2.4.5/spark-2.4.5-bin-hadoop2.7.tgz
 tar -zxf spark-2.4.5-bin-hadoop2.7.tgz
 cd spark-2.4.5-bin-hadoop2.7
-touch linking
-cat >> linking # The indented block is to be copy-pasted into the input
-function spark_notebook () 
-{
-#Spark path (based on your computer)
-SPARK_PATH=~/spark-2.4.5-bin-hadoop2.7
+cat >> ~/.bashrc # The indented block is to be copy-pasted into the input
+    function spark_notebook () 
+    {
+    #Spark path (based on your computer)
+    SPARK_PATH=~/spark-2.4.5-bin-hadoop2.7
 
-export PYSPARK_DRIVER_PYTHON="jupyter"
-export PYSPARK_DRIVER_PYTHON_OPTS="notebook --port 9999"
+    export PYSPARK_DRIVER_PYTHON="jupyter"
+    export PYSPARK_DRIVER_PYTHON_OPTS="notebook --port 9999"
 
-# For python 3 users, you have to add the line below or you will get an error 
-export PYSPARK_PYTHON=python3
+    # For python 3 users, you have to add the line below or you will get an error 
+    export PYSPARK_PYTHON=python3
 
-$SPARK_PATH/bin/pyspark --master local[*]
-}
+    $SPARK_PATH/bin/pyspark --master local[*]
+    }
 cat linking >> ~/.bashrc
 source ~/.bashrc
 # spark_notebook
