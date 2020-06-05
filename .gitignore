@@ -2,6 +2,8 @@
 **/notes.txt
 **/instrukcijas.txt
 **/ports.txt
+**/temp_notes.sql
+**/md.txt
 
 # Ignore key files as an additional security measure
 **/*.pem

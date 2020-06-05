@@ -1,3 +1,5 @@
+
+
 Port forwarding:
     ssh -N -i <key_file>.pem -f -L localhost:<browser_port>:localhost:<remorte_port> ubuntu@<remote_public_ip>
 
@@ -91,3 +93,5 @@ HDP (sandbox -> machine) service  port mapping:
     8086  ->  8086    Port for custom use
     8082  ->  8082    Port for custom use
     60000 ->  60000   Port for custom use
+
+Most of the basics that we`ll cover: https://www.cloudera.com/tutorials/learning-the-ropes-of-the-hdp-sandbox.html
