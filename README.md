@@ -7,7 +7,7 @@ https://github.com/reversedego/RCS_course
 
 ## 1. Linux vides un programmēšanas pamatkoncepti
 1. 15.06 Vides uzstādīšana. Putty/SSH, Iepazīšanās ar komandrindu, pakotņu instalācijas, Python instalācija, JNB instalācija, VSCode instalācija.
-2. 18.06 Programmēšanas pamatkoncepti. Linux pamatkomandas. Pieejas. Procesora, diska, atmiņas un tīkla koncepti (IP adrese, ports). Github repo ielāde.
+2. 18.06 Programmēšanas pamatkoncepti. Linux pamatkomandas. Pieejas. Procesora, diska, atmiņas un tīkla koncepti (IP adrese, ports). Github repo lietošana
 
 
 ## 2. Python pamati
