@@ -14,9 +14,9 @@ bash example_script.sh
 
 
 
-# 3. Jārediģē šī norāžu virkne, lai tā veiksmīgi uz ekrāna parādītu sekojošās divas rindiņas:
+# 3. Jārediģē šī norāžu virkne (sākot no jūsu vārda direktorijas), lai tā veiksmīgi uz ekrāna parādītu sekojošās divas rindiņas:
 # sveiki
-# /home/ubuntu/uzdevums/test_directory_1
+# /home/<jusu_varda_direktorija>/ubuntu/uzdevums/test_directory_1
 mkdir uzdevums
 cd uzdevums
 mkdir test_directory_1
@@ -43,7 +43,7 @@ df
 
 
 # 5. Jāieliek teksta failā json_example.json kāds no .json failiem, kas atrodas adresē https://json.org/example.html
-
+# Hint: cat komandai ne vienmēr vajag argumentu
 
 
 # 6.  Jāizmēģina sekojošās komandas. Vai nostrādāja? Kāpēc? Ja nepieciešams:
@@ -73,7 +73,7 @@ ls -alh
 
 
 # Izmēģininiet sekojošo komandu. Vai izdevās? Kāpēc?
-rm /home/ubuntu/uzdevums/test_directory_2
+rm <jusu_varda_direktorija>/uzdevums/test_directory_2
 
 
 

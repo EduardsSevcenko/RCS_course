@@ -84,7 +84,7 @@ https://docs.anaconda.com/anaconda/install/windows/
 Neatkarīgi no operētājsistēmas, ir nepieciešams atcerēties kur jūs instalējat Anaconda jo pēc tam uz šo atrašānās vietu vajadzēs atsaukties.
 
 
-## 4. Jupyter Notebook
+## 4. Jupyter Notebook (obligāti)  
 Jupyter Notebook būs mūsu primārais Python koda apstrādes rīks. 
 <!-- https://jupyter.org/install -->
 
@@ -100,12 +100,11 @@ Instalēt jupyter notebook caur Ubuntu apakšsistēmu nedrīkst jo Windows to vi
 Ir iespējams, ka nepieciešamās pakotnes jau būs instalētas. Tādā gadījumā Anaconda prompt par to arī ziņos.
 
 
-## 5. VSCode  
+## 5. VSCode (obligāti)  
 Mēs lietosim VSCode, lai rediģētu Python, bash un SQL kodu, kā arī lai ērti sekotu kursa repozitorijam caur git.
 Ielādējiet to no sekojošā linka:  
 https://code.visualstudio.com/download.  
 Nākamais solis ir instalēt Python paplašinājumu uz VSCode, kas atļaus automātiski atrast kļūdas un labot koda sintaksi.
-To var 
 
-## 6. git  
+## 6. git (obligāti)  
 git ir viena no pasaulē populārākajām koda versiju kontroles sistēmām. Izmantosim to, lai atjauninātu kursa materiālus. 
